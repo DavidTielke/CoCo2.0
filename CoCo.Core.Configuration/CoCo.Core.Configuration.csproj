@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>CoCo.Core.Configuration</AssemblyName>
+	<RootNamespace>DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Configuration</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Core" Version="4.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoCo.Core.Contract\CoCo.Core.Contract.csproj" />
+  </ItemGroup>
+</Project>
+
+    

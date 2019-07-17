@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <AssemblyName>CrossCutting.CoCo.Core.Owin</AssemblyName>
+    <RootNamespace>DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Owin</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
+    <PackageReference Include="Owin" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Owin" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoCo.Core.Bootstrapping\CoCo.Core.Bootstrapping.csproj" />
+    <ProjectReference Include="..\CoCo.Core.Configuration.DatabaseSource\CoCo.Core.Configuration.DatabaseSource.csproj" />
+    <ProjectReference Include="..\CoCo.Core.Configuration\CoCo.Core.Configuration.csproj" />
+    <ProjectReference Include="..\CoCo.Core.Contract\CoCo.Core.Contract.csproj" />
+    <ProjectReference Include="..\CoCo.Core.EventBrokerage\CoCo.Core.EventBrokerage.csproj" />
+    <ProjectReference Include="..\CoCo.Core.NinjectAdapter\CoCo.Core.NinjectAdapter.csproj" />
+  </ItemGroup>
+</Project>

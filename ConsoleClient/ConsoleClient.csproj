@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <StartupObject></StartupObject>
+    <ApplicationIcon />
+    <AssemblyName>UI.ConsoleClient</AssemblyName>
+    <RootNamespace>DavidTielke.PersonManagementApp.UI.ConsoleClient</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoCo.Core.Bootstrapping\CoCo.Core.Bootstrapping.csproj" />
+    <ProjectReference Include="..\CoCo.Core.Configuration.DatabaseSource\CoCo.Core.Configuration.DatabaseSource.csproj" />
+    <ProjectReference Include="..\CoCo.Core.Configuration\CoCo.Core.Configuration.csproj" />
+    <ProjectReference Include="..\CoCo.Core.EventBrokerage\CoCo.Core.EventBrokerage.csproj" />
+    <ProjectReference Include="..\CoCo.Core.NinjectAdapter\CoCo.Core.NinjectAdapter.csproj" />
+    <ProjectReference Include="..\Mappings\Mappings.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Person.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

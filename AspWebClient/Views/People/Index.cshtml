@@ -1,0 +1,42 @@
+﻿@model DavidTielke.PersonManagementApp.UI.AspWebClient.Models.PeopleModels.PeopleIndexModel
+
+@{
+    ViewBag.Title = "Kontakte";
+}
+
+<h2>Kontakte</h2>
+
+<h3>Erwachsene</h3>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    @foreach (var adult in Model.Adults)
+    {
+        <tr>
+            <td>@adult.Id</td>
+            <td>@adult.Name</td>
+            <td>@adult.Age</td>
+        </tr>
+    }
+</table>
+
+<h3>Kinder</h3>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    @foreach (var child in Model.Children)
+    {
+        <tr>
+            <td>@child.Id</td>
+            <td>@child.Name</td>
+            <td>@child.Age</td>
+        </tr>
+    }
+</table>
+
